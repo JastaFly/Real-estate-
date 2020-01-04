@@ -3,7 +3,7 @@
 </div>
     <div class="modal-window">
         <div class="modal-head">
-            <div class="delite" onclick="closer()"></div>
+            <div class="delite" onclick="closer(this)"></div>
         </div>
        
         <img src="<?php echo get_template_directory_uri()?>/img/logo-ok.png" class="super" alt="">
@@ -12,7 +12,15 @@
         <p class="done">Посмотреть</p>
         </a>
     </div>
+<div class="modal-fiasco">
+    <div class="modal-head">
+        <div class="delite" onclick="closer(this)"></div>
+    </div>
 
+    <img src="<?php echo get_template_directory_uri()?>/img/fiasco.png" class="super" alt="">
+    <p class="good-job">Заполните обязательные поля!</p>
+    <p class="star-description">Обязательные поля помечены <span class="red-star">*</span></p>
+</div>
 <div class="center-wrap">
     <div class="main-wrap">
         <p class="big mini-title hover-black">Свежачок:</p>

@@ -36,13 +36,9 @@ let slider = function(value, element, count_name) {
         }, 500);
     }
 }
-let closer = function() {
+let closer = function(elem) {
+    let parent_elem = elem.parentNode.parentNode;
+    console.log(parent_elem);
     $('.modal-shadow').slideToggle(400);
-    $('.modal-window').slideToggle(400);
-   /* let modal_shadow = document.getElementsByClassName('modal-shadow');
-    modal_shadow[0].style.display = 'none';
-    
-    let modal_window = document.getElementsByClassName('modal-window');
-    modal_window[0].style.display = 'none';
-    console.log(modal_window[0]); */
+    $(parent_elem).slideToggle(400);
 }
